@@ -1,0 +1,26 @@
+﻿<Window x:Class="ImageProcessing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageProcessing"
+        mc:Ignorable="d"
+        Title="ImageProcessing-1" Height="439" Width="703" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    <Grid Name="grid1" Margin="5">
+        <StackPanel HorizontalAlignment="Center">
+            <WrapPanel HorizontalAlignment="Center">
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="320" Margin="5" VerticalAlignment="Top" Width="320">
+                    <Image Name="g1" HorizontalAlignment="Left" Height="320" Margin="-0.8,-0.8,-0.8,-1" VerticalAlignment="Top" Width="320"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="320" Margin="5" VerticalAlignment="Top" Width="320">
+                    <Image Name="g2" HorizontalAlignment="Left" Height="320" Margin="-0.8,-0.8,-0.8,-1" VerticalAlignment="Top" Width="320"/>
+                </Border>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Name="btnReset" Content="Reset" HorizontalAlignment="Left" Height="50" Margin="5" VerticalAlignment="Top" Width="137" Click="btnReset_Click"/>
+                <Button Name="btnBlur" Content="Set Blur (Box 3x3)" HorizontalAlignment="Left" Height="50" Margin="5" VerticalAlignment="Top" Width="137" Click="btnBlur_Click"/>
+                <Button Name="btnFloydSteinberg" Content="Set Floyd-Steinberg dithering" HorizontalAlignment="Left" Height="50" Margin="5" VerticalAlignment="Top" Width="177" Click="btnFloydSteinberg_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
